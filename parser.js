@@ -73,7 +73,7 @@ fs.readdir('vkData/', function(err, filenames) {
                 fill: {
                     type: 'pattern',
                     patternType: 'solid',
-                    fgColor: 'd2f8fa',
+                    fgColor: '7df3b2',
                 },
                 font: {
                     bold: true,
@@ -91,7 +91,7 @@ fs.readdir('vkData/', function(err, filenames) {
                 fill: {
                     type: 'pattern',
                     patternType: 'solid',
-                    fgColor: 'feffe7',
+                    fgColor: 'f9ffe7',
                 },
                 alignment: {
                     horizontal: 'left'
