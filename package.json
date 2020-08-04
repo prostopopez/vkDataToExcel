@@ -1,0 +1,8 @@
+{
+  "name": "vkDataToExcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/prostopopez/vkDataToExcel.git",
+  "author": "prostopopez",
+  "license": "MIT"
+}
