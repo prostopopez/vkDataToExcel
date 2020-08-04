@@ -8,9 +8,9 @@ $ yarn
 
 ## Running the app
 ```bash
-# build
+# nodemon startup
 $ yarn server
 
-# watch mode
+# script startup
 $ yarn script
 ```
