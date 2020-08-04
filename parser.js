@@ -35,7 +35,7 @@ fs.readFile(__dirname + '/vkData/messages23450.html', 'utf-8', function (err, ht
     }
 
     console.log(query);
-    fs.writeFile('helloworld.txt', JSON.stringify(query),function (err) {
-        if (err) return console.log(err);
-    });
+    // fs.writeFile('helloworld.txt', JSON.stringify(query),function (err) {
+    //     if (err) return console.log(err);
+    // });
 });
