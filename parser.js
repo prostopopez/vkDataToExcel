@@ -1,14 +1,13 @@
 let fs = require("fs");
-const parse = require('node-html-parser').parse;
+const jsdom = require("jsdom");
 
 fs.readFile(__dirname + '/vkData/messages23450.html', 'utf-8', function (err, html) {
     if (err) {
         throw err;
     }
 
-    const root = parse(html);
-    let data = root.querySelectorAll('.message__header+div');
-    console.log(data);
+    const root = new jsdom.JSDOM(html);
+    let data = root.window.document.querySelectorAll('.message__header+div');
     let query = [];
 
     for (let x = 0; x < data.length; x++) {
@@ -36,7 +35,7 @@ fs.readFile(__dirname + '/vkData/messages23450.html', 'utf-8', function (err, ht
     }
 
     console.log(query);
-    fs.writeFile('helloworld.txt', query,function (err) {
+    fs.writeFile('helloworld.txt', JSON.stringify(query),function (err) {
         if (err) return console.log(err);
     });
 });
