@@ -1,13 +1,15 @@
 # vkDataToExcel
-<p align="center">VK messages Data to Excel File with Node</p>
+<p align="center">VK messages Data to Excel File with Node Example</p>
 
 ## Installation
 ```bash
 $ yarn
 ```
 
-## Running the app
+## Script Usage
 ```bash
+# firstly, upload the html files of your messages to /vkData
+
 # nodemon startup
 $ yarn server
 
